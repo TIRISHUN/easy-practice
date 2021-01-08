@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header">
+      <!-- 上部ヘッダー -->
+      <div class="h-inner">
+        <img src="images/main_logo.png" />
+      </div>
+      <!-- スマートフォン用サイドボタン -->
+
+      <div class="sp-menu">
+        <span id="open" class="material-icons"> menu </span>
+      </div>
+      <div class="overlay">
+        <span id="close" class="material-icons"> cancel </span>
+        <ul>
+          <li>レッスン</li>
+          <li>新規登録</li>
+          <li>ログイン</li>
+        </ul>
+      </div>
+      <!--// スマートフォン用サイドボタン -->
+      <ul class="tp-menu">
+        <li>レッスン</li>
+        <li>新規登録</li>
+        <li>ログイン</li>
+      </ul>
+
+      <!-- /上部ヘッダー -->
+    </header>
+    <!-- /ヘッダー -->
+
+    <!-- プレビュー -->
+    <div class="h-contents">
+      <div class="example">
+        <!-- プレビュー説明文 -->
+        <div class="h-content">
+          <h1>
+            LEARN TO CODE.<br />
+            LEARN TO BE CREATIVE.
+          </h1>
+          <p>Progateはオンラインプログラミング学習サービスです。</p>
+          <p>
+            初心者にもやさしいスライドとレッスンで、Webサービスを作りながらプログラミングを学んでいきましょう。
+          </p>
+        </div>
+        <!-- /プレビュー説明文 -->
+        <!-- 登録ボタン -->
+        <div class="h-content-btn">
+          <button class="new-btn">新規登録はこちら</button>
+          <p>or</p>
+          <button class="face-btn">Facebookで登録</button>
+          <p>or</p>
+          <button class="tweet-btn">Twitterで登録</button>
+        </div>
+      </div>
+      <!-- /登録ボタン -->
+    </div>
+    <!-- /プレビュー -->
+
+    <!-- メイン -->
+    <main id="main">
+      <div class="m-inner">
+        <!-- セクション＿０１ -->
+        <section class="m-s_01">
+          <h2>Learn Where to Get Started!</h2>
+          <!-- 学習項目 -->
+          <ul class="m-s_lists">
+            <!-- 学習項目 html css -->
+            <li>
+              <div class="m-s_list">
+                <div class="learn-menu-top">
+                  <img src="images/html.png" />
+                  <p>HTML & CSS</p>
+                </div>
+                <div class="learn-menu-bottom">
+                  <p>
+                    Webページの作成に使用される言語です。
+                    HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- /学習項目 html css -->
+            <!-- 学習項目 jquery-->
+            <li>
+              <div class="m-s_list">
+                <div class="learn-menu-top">
+                  <img src="images/jQuery.png" />
+                  <p>jQuery</p>
+                </div>
+                <div class="learn-menu-bottom">
+                  <p>
+                    素敵な動きを手軽に実装できるJavaScriptライブラリです。
+                    アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- /学習項目 jquery-->
+            <!-- 学習項目 ruby-->
+            <li>
+              <div class="m-s_list">
+                <div class="learn-menu-top">
+                  <img src="images/ruby.png" />
+                  <p>Ruby</p>
+                </div>
+                <div class="learn-menu-bottom">
+                  <p>
+                    オープンソースの動的なプログラミング言語で、
+                    シンプルさと高い生産性を備えています。
+                    大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- /学習項目 ruby-->
+            <!-- 学習項目 php-->
+            <li>
+              <div class="m-s_list">
+                <div class="learn-menu-top">
+                  <img src="images/php.png" />
+                  <p>PHP</p>
+                </div>
+                <div class="learn-menu-bottom">
+                  <p>
+                    HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- /学習項目 php-->
+          </ul>
+          <!-- /学習項目 -->
+        </section>
+        <!-- /セクション＿０１ -->
+
+        <!-- セクション＿０２ -->
+        <section class="m-s_02">
+          <div class="m-s_02-contents">
+            <p>さぁ、あなたもProgateでプログラミングを学んでみませんか?</p>
+            <p>Let's learn to code, learn to be creative!</p>
+          </div>
+          <div class="m-s_02-contents-btn">
+            <button class="develop-btn">さっそく開発する</button>
+          </div>
+        </section>
+        <!-- /セクション＿０２ -->
+      </div>
+    </main>
+    <!-- /メイン -->
+
+    <footer id="footer">
+      <div class="footer-contents">
+        <img src="footer_logo.png" alt="フッター画像" />
+        <p class="f-c-menu">
+          <small>Learn to code, learn to be creative.</small>
+        </p>
+      </div>
+    </footer>
+    <script>
+      "use strict";
+      const open = document.getElementById("open"); //openID取得
+      const overlay = document.querySelector(".overlay"); //overlayセレクタ取得
+      const close = document.getElementById("close"); //closeID取得
+      open.addEventListener("click", () => {
+        overlay.classList.add("show");
+        open.classList.add("hide");
+        //openIDをクリックするとoverlayクラスとopenクラスにそれぞれshow、hideを追加
+      });
+      close.addEventListener("click", () => {
+        overlay.classList.remove("show");
+        open.classList.remove("hide");
+        //closeIDをクリックするとoverlayクラスとopenクラスにそれぞれshow、hideを撤去
+      });
+    </script>
+  </body>
+</html>

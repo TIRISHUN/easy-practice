@@ -1,0 +1,370 @@
+/*common*/
+/*small screen*/
+body,
+h1,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+button,
+p,
+.m-s_01 ul,
+.m-s_02 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  background: #2d363c;
+  width: 100%;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tp-menu {
+  display: none;
+}
+
+/*スマートフォン用アクション*/
+.sp-menu {
+  margin: 1rem;
+  color: white;
+}
+
+.sp-menu #open {
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.overlay ul {
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 8rem;
+}
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.overlay li {
+  font-size: 3.2rem;
+  opacity: 0;
+  transform: translateY(1.6rem);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+.overlay.show li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.overlay.show li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.overlay.show li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+/*　//スマートフォン用アクション*/
+
+.h-inner {
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+.h-inner img {
+  width: 50vw;
+  max-width: 300px;
+}
+
+.h-contents {
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  background-position: 30%;
+  height: 120vh;
+}
+
+main {
+  border-bottom: 1px solid #b3aeb4;
+}
+
+.example {
+  padding-top: 8vh;
+  text-align: center;
+}
+
+.h-content {
+  margin-bottom: 10%;
+  color: white;
+}
+
+.h-content h1 {
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 5%;
+}
+
+.h-content p {
+  padding: 0 15vw;
+  opacity: 0.8;
+}
+
+.h-content-btn {
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-content-btn p {
+  color: white;
+  opacity: 0.6;
+}
+
+.h-content-btn button {
+  padding: 5%;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.h-content-btn button:hover {
+  /* padding: 5%;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-weight: bold; */
+  opacity: 1;
+}
+
+.new-btn {
+  background-color: #23896e;
+  margin-bottom: 5%;
+}
+
+.face-btn {
+  background-color: #355189;
+  margin: 5% 0;
+}
+
+.face-btn::before {
+  content: ""; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 30px; /*画像の幅*/
+  height: 30px; /*画像の高さ*/
+  background-image: url(face.png);
+  background-size: contain;
+  vertical-align: middle;
+}
+.tweet-btn {
+  background-color: #499ad1;
+  margin-top: 5%;
+}
+
+.tweet-btn::before {
+  content: ""; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 30px; /*画像の幅*/
+  height: 30px; /*画像の高さ*/
+  background-image: url(bird.png);
+  background-size: contain;
+  vertical-align: middle;
+}
+.m-inner {
+  text-align: center;
+}
+
+.m-s_01 {
+  /*要レスポンシブ*/
+  background-color: #f7f7f7;
+  padding: 5%;
+}
+
+.m-s_01 > p {
+  font-weight: bold;
+  margin-bottom: 7%;
+}
+
+.m-s_lists {
+  list-style: none;
+}
+
+.m-s_list {
+  padding: 10px;
+}
+
+.learn-menu-top {
+  position: relative;
+}
+
+.learn-menu-top p {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.learn-menu-bottom p {
+  color: #b3aeb4;
+}
+
+.m-s_02 {
+  padding: 10% 15%;
+}
+
+.m-s_02-contents {
+  line-height: 3.5vh;
+}
+
+.m-s_02-contents-btn {
+  padding-top: 10%;
+}
+
+.m-s_02-contents-btn button {
+  color: white;
+  background-color: #81d5a1;
+  border: none;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 0px 7px 0px 0px #509467;
+  opacity: 0.8;
+}
+
+.m-s_02-contents-btn button:hover {
+  opacity: 1;
+}
+
+.m-s_02-contents-btn button:active {
+  cursor: pointer;
+  box-shadow: none;
+  transform: translateY(7px);
+  opacity: 1;
+}
+
+footer {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.footer-contents img {
+  width: 20vh;
+}
+
+.f-c-menu small {
+  color: #b3aeb4;
+}
+
+@media screen and (min-width: 768px) {
+  button,
+  p,
+  .m-s_01 ul,
+  .m-s_02 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .sp-menu {
+    display: none;
+  }
+
+  .tp-menu {
+    display: flex;
+    list-style: none;
+    color: white;
+  }
+
+  .tp-menu li {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .tp-menu li:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .m-s_01 ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .m-s_01 li {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .example {
+    padding-top: 15vh;
+  }
+  .h-content {
+    margin-bottom: 3%;
+  }
+  .h-content-btn button {
+    padding: 2%;
+  }
+  .new-btn {
+    margin-bottom: 1%;
+    height: 70px;
+  }
+  .face-btn {
+    margin: 1% 0;
+  }
+  .tweet-btn {
+    margin-top: 1%;
+  }
+}
